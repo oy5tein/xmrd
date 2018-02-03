@@ -1,0 +1,2 @@
+# xmrd
+deamonize xmr mining

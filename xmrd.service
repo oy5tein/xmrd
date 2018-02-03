@@ -1,0 +1,14 @@
+[Unit]
+After=network.target
+
+
+[Service]
+WorkingDirectory=/usr/local/xmr/
+Type=forking
+ExecStart=/bin/bash server.sh start
+Restart=always
+User=root
+
+
+[Install]
+WantedBy=multi-user.target
